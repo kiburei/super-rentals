@@ -18,6 +18,10 @@ export default Ember.Route.extend({
       rental.destroyRecord();
       this.transitionTo('index');
     },
+    destroyReview(review) {
+     review.destroyRecord();
+     this.transitionTo('index');
+   },
     saveReview(params) {
       var newReview = this.store.createRecord('review', params);
       var rental = params.rental;
