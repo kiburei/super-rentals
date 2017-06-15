@@ -1,1 +1,7 @@
+<h2>My Bookings</h2>
+{{#each booking.items as |item|}}
+<ul>
+  <li>{{item.owner}} -- {{item.bedrooms}}</li>
+</ul>
+{{/each}}
 {{yield}}
