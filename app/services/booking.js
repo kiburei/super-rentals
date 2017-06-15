@@ -1,8 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
-  item:[],
+  items:[],
   add(item){
     this.get('items').pushObject(item);
+    alert("Added to Cart");
   }
 });
